@@ -52,8 +52,7 @@ ngram/
 ├── smoothing.py # ラプラススムージングの実装
 └── sample.txt # 学習に用いたサンプル文章
 
-python
-コードをコピーする
+
 
 最小構成の bigram のコード例：
 
@@ -73,14 +72,16 @@ class BigramModel:
         if not next_words:
             return None
         return max(next_words, key=next_words.get)
+
+
 🚀 実行方法
 nginx
-コードをコピーする
+
 python bigram.py
 または：
 
 nginx
-コードをコピーする
+
 python trigram.py
 📄 参考文献
 Jurafsky & Martin, “Speech and Language Processing”
@@ -101,4 +102,5 @@ n-gram と word2vec の比較
 ✨ 作者メモ
 このリポジトリは、言語モデルの基礎理解のための学習ログです。
 今後は GloVe / FastText / Transformer なども学習し、記録していく予定です。
+
 
